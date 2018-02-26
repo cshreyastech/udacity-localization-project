@@ -21,7 +21,7 @@ catkin_make
 source devel/setup.bash
 rosrun udacity_bot navigation_goal
 ```
-
+---
 #### Steps to run shreyas-bot
 Open first terminal
 ```
