@@ -1,25 +1,36 @@
-<?xml version="1.0" ?>
+<?xml version="1.0"?>
+<robot>
 
-<sdf version="1.4">
+  <material name="black">
+    <color rgba="0.0 0.0 0.0 1.0"/>
+  </material>
 
-  <world name="default">
+  <material name="blue">
+    <color rgba="0.0 0.0 0.8 1.0"/>
+  </material>
 
-    <include>
-      <uri>model://ground_plane</uri>
-    </include>
+  <material name="green">
+    <color rgba="0.0 0.8 0.0 1.0"/>
+  </material>
 
-    <!-- Light source -->
-    <include>
-      <uri>model://sun</uri>
-    </include>
+  <material name="grey">
+    <color rgba="0.2 0.2 0.2 1.0"/>
+  </material>
 
-    <!-- World camera -->
-    <gui fullscreen='0'>
-      <camera name='world_camera'>
-        <pose>4.927360 -4.376610 3.740080 0.000000 0.275643 2.356190</pose>
-        <view_controller>orbit</view_controller>
-      </camera>
-    </gui>
+  <material name="orange">
+    <color rgba="${255/255} ${108/255} ${10/255} 1.0"/>
+  </material>
 
-  </world>
-</sdf>
+  <material name="brown">
+    <color rgba="${222/255} ${207/255} ${195/255} 1.0"/>
+  </material>
+
+  <material name="red">
+    <color rgba="0.8 0.0 0.0 1.0"/>
+  </material>
+
+  <material name="white">
+    <color rgba="1.0 1.0 1.0 1.0"/>
+  </material>
+
+</robot>
