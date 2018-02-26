@@ -10,7 +10,8 @@
   <arg name="debug" default="false"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(find shreyas_bot)/worlds/shreyas.world"/>
+    <!--arg name="world_name" value="$(find shreyas_bot)/worlds/shreyas.world"/-->
+    <arg name="world_name" value="$(find shreyas_bot)/worlds/jackal_race.world"/>
     <arg name="paused" value="$(arg paused)"/>
     <arg name="use_sim_time" value="$(arg use_sim_time)"/>
     <arg name="gui" value="$(arg gui)"/>
@@ -23,5 +24,6 @@
 output="screen" args="-urdf -param robot_description -model shreyas_bot"/>
 
   <!--launch rviz-->
-  <node name="rviz" pkg="rviz" type="rviz" respawn="false"/>
+  <!--node name="rviz" pkg="rviz" type="rviz" respawn="false"/ -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find shreyas_bot)/rviz/shreyas_bot.rviz"/>
 </launch>
